@@ -1,5 +1,47 @@
+.q-deatils-container{
+    margin: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.details-header{
+      font-family: sans-serif;
+      color: green;
+}
+
+.sub-container{
+    display: flex;
+    align-items: center;
+}
+
+.para-deatail{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.start-btn{
+    background-color: #561376;
+    color: white;
+    border: none;
+    padding: 6px 15px;
+    font-family: sans-serif;
+    font-weight: 600;
+    border-radius: 20px;
+    margin: auto 20%;
+    margin-top: 10px;
+}
+
 .block{
     display: block;
+    background-color: #561376;
+    color: white;
+    border: none;
+    padding: 6px 15px;
+    font-family: sans-serif;
+    font-weight: 600;
+    border-radius: 20px;
 }
 
 .none{

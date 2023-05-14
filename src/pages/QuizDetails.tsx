@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './QuizDetails.css';
+import Quizbg from '../assets/Quizbg.png';
+import quizData from '../components/quizData.json';
 
 const QuizDetail: React.FC = () => {
   const [displayPopUp, setDisplayPopUp] = useState<string>('');
@@ -14,17 +16,22 @@ const QuizDetail: React.FC = () => {
   };
 
   return (
-    <div>
-      <h1>Quiz Title</h1>
-      <p>Quiz Description</p>
-      <p>Number of Questions: X</p>
+    <div className='q-deatils-container'>
+      <div className='sub-container'>
+      <h1 className='details-header'>Daily Quiz MS Quiz</h1>
+      <img src={Quizbg} alt=''/>
+      </div>
+      <h2>Quiz Description</h2>
+      <p className='para-deatail'>This Microsoft Excel Proficiency Test is designed to evaluate an individual's knowledge and skills in using Microsoft Excel covers a wide range of topics, including data.</p>
       <button className={displayPopUp ? 'none' : 'block'} onClick={handlePopUp}>
         Take Quiz
       </button>
-      <div className={displayPopUp ? 'block' : 'none'} onClick={handlePopUp}>
-        <h1>Quiz Rules</h1>
+      <div className={displayPopUp ? '' : 'none'} onClick={handlePopUp}>
+        <h3>Quiz Rules</h3>
+        <p>Number of Questions: {quizData.totalQuestions}</p>
+        <p>Time : {quizData.totalQuestions} mins</p>
         <Link to="/quiz">
-          <button>Start</button>
+          <button className='start-btn'>Start</button>
         </Link>
       </div>
     </div>

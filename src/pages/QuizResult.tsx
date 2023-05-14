@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
+import Welldone from '../assets/welldone.jpg'
+import './QuizResult.css'
 
 const QuizResult = (): JSX.Element => {
   const location = useLocation();
@@ -12,9 +14,12 @@ const QuizResult = (): JSX.Element => {
   }, [location]);
 
   return (
-    <div>
-      <h2>Your Quiz Score: {score}</h2>
+    <div className='result'>
+      <img src={Welldone} alt=''/>
+      <h2> {score}</h2>
+      <h2>Karma Points earned</h2>
     </div>
+
   );
 };
 

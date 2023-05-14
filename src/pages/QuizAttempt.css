@@ -1,0 +1,91 @@
+.attempt-container{
+    padding: 25px;
+    font-family: sans-serif;
+    height: 100vh;
+    background-color: #eff1f7;
+}
+
+.sub-attemptctn{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+.qtns{
+    background-color: #519a74;
+    color: white;
+    
+}
+
+.time{
+    color: white;
+    background-color: #9c6ab7;
+}
+
+.qtns, .time{
+    padding: 5px 10px;
+    border: none;
+    border-radius: 15px;
+}
+
+.questions{
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 40vh;
+
+}
+
+.form-elmt{
+    display: flex;
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 18px;
+    text-align: center;
+}
+
+.active{
+    display: flex;
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 18px;
+    text-align: center;
+    border: 1px solid #519a74;
+}
+
+.form-elmt > p {
+    border: 1px solid black;
+    padding: 5px;
+    margin-right: 20px;
+}
+
+.flex > label{
+    margin-top: 7px;
+    
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+.btn-flex{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn-attempt{
+    background-color: #531975;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 15px;
+}

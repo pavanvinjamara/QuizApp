@@ -16,7 +16,7 @@ const QuizResult = (): JSX.Element => {
   return (
     <div className='result'>
       <img src={Welldone} alt=''/>
-      <h2> {score}</h2>
+      <h1 className='score-result'> {score}</h1>
       <h2>Karma Points earned</h2>
     </div>
 

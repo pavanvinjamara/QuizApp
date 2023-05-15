@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import Welldone from '../assets/welldone.jpg'
 import './QuizResult.css'
+import quizData from '../components/quizData.json';
 
 const QuizResult = (): JSX.Element => {
   const location = useLocation();
@@ -12,6 +13,8 @@ const QuizResult = (): JSX.Element => {
     const scoreValue = queryParams.get('score');
     setScore(scoreValue ? parseInt(scoreValue) : null);
   }, [location]);
+
+ 
 
   return (
     <div className='result'>

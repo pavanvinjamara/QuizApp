@@ -26,10 +26,20 @@ const QuizDetail: React.FC = () => {
       <button className={displayPopUp ? 'none' : 'block'} onClick={handlePopUp}>
         Take Quiz
       </button>
-      <div className={displayPopUp ? '' : 'none'} onClick={handlePopUp}>
+      <div className={displayPopUp ? 'blocked' : 'none'} onClick={handlePopUp}>
         <h3>Quiz Rules</h3>
-        <p>Number of Questions: {quizData.totalQuestions}</p>
-        <p>Time : {quizData.totalQuestions} mins</p>
+        <div>
+        <h4>{quizData.totalQuestions} Questions</h4>
+        <p>We believe that you will ace it! </p>
+        </div>
+        <div>
+        <h4>{quizData.totalQuestions} Mins</h4>
+        <p>Keep in mind that it's a time-bound quiz.</p>
+        </div>
+        <div>
+        <h4>50% Passing Criteria</h4>
+        <p>All the best! See you on the other side.</p>
+        </div>
         <Link to="/quiz">
           <button className='start-btn'>Start</button>
         </Link>

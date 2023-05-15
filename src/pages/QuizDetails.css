@@ -1,8 +1,10 @@
 .q-deatils-container{
-    margin: 18px;
+    padding: 18px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #eff1f7;
+    height: 100vh;
 }
 
 .details-header{
@@ -29,7 +31,7 @@
     font-family: sans-serif;
     font-weight: 600;
     border-radius: 20px;
-    margin: auto 20%;
+    margin: auto 44%;
     margin-top: 10px;
 }
 
@@ -42,8 +44,34 @@
     font-family: sans-serif;
     font-weight: 600;
     border-radius: 20px;
+    position: absolute;
+    bottom: 20px;
 }
 
 .none{
     display: none;
+    /* position: absolute;
+    bottom: 20px */
+}
+.blocked{
+    border: none;
+    padding: 6px 15px;
+    font-family: sans-serif;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 20px;
+    background-color: white;
+    width: 90%;
+    margin: 20px 20px 0px 20px;
+   
+}
+
+.blocked > h3{
+    padding: 15px;
+    text-align: center;
+}
+
+
+.blocked > div{
+    padding: 15px;
 }

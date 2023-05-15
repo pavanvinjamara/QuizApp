@@ -86,9 +86,10 @@ const QuizAttempt: React.FC = () => {
       <p className='time'>{Math.floor(remainingTime / 60)}:{(remainingTime % 60).toString().padStart(2, '0')}</p>
       </div>
       <p className='questions'>{currentQuestion.question}</p>
+      <div className='abosulte'>
       <form>
         {currentQuestion.options.map((option, index) => (
-          <div key={index}  className='form-elmt'>
+          <div key={index} className='form-elmt'>
              <p >{index+1}</p>
              <div className='flex'>
             <label htmlFor={`option${index + 1}`}>{option}</label>
@@ -110,6 +111,7 @@ const QuizAttempt: React.FC = () => {
         <button className='btn-attempt' onClick={handleNextQuestion}>Next</button> :
         <button className='btn-attempt' onClick={handleSubmit}>Submit</button>
       }
+      </div>
       </div>
     </div>
   );

@@ -89,3 +89,13 @@ form{
     border: none;
     border-radius: 15px;
 }
+
+.radio-btn{
+    accent-color: #519a74;
+}
+
+.abosulte{
+    position: absolute;
+    width: 90%;
+    bottom: 25px;
+}
